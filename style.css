@@ -9,7 +9,6 @@ alle imm che si alzano*/
 
 /*footer 3 da 6, che diventano 3 da 12 in lg*/
 
-
 ul.dropdown-menu.show {
     transform: translate(0px, 52px);
 }
@@ -49,10 +48,10 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
 .button-login:hover a:after {
     content: "";
     position: absolute;
-    top: 5%;
-    left: 4%;
-    width: 92%;
-    height: 90%;
+    top: 6%;
+    left: 2%;
+    width: 96%;
+    height: 88%;
     border: 1px solid white;
     opacity: 0;
     animation: bordo 0.2s linear forwards;
@@ -77,7 +76,7 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
 }
 
 .container-fluid.dropdown-menu.border-0.show{
-    transform: translate(0px,110px)!important;
+    transform: translate(0px,105px)!important;
 }
 .navbar-collapse .navbar-nav .dropdown-menu.border-0.show{
     transform: translate(0px,0px)!important;
@@ -101,3 +100,119 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
     width: 98%;
     height: 92%;
 }
+
+.container-fluid.menu-fixed{
+    z-index: 1000;
+}
+
+/*CONTAINER DUE */
+
+.block-2 {
+    background-image: url(img/jumbo-bg.png);
+    background-size: auto;
+    height: 795px;
+    background-position: center;
+    background-position-y: 120px;
+    background-repeat: repeat-x;
+}
+
+.block-2 .row-main{
+    transform:translate(0px,400px);
+}
+
+.button-acquista{
+    background-color:orangered!important;
+}
+
+h1{ /*prima c'era il .main-title */
+    font-size: 2.7rem;
+}
+
+/*CONTAINER TRE */
+.block-3 img.img-fluid{
+    border-radius: 15px;
+    transition: transform 1s;
+}
+
+.block-3 div.preview:hover img{
+    transform: translate(0px,-15px);
+}
+
+/*/.main-img-preview{
+    position: relative;
+}
+.main-img-preview::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 2000;
+    background-color: red;
+    border: 2px solid blue;
+}*/
+
+/*CONTAINER  QUATTRO */
+/*E' TRISTE*/
+
+/*CONTAINER CINQUE */
+.button-more-info{
+    background-color:unset;
+}
+
+.accessory-preview div.preview img{
+    filter: opacity(0.6);
+    transition: filter 1s;
+}
+.accessory-preview div.preview:hover img{
+    filter: opacity(1);
+    cursor: pointer;
+}
+
+/*CONTAINER SEI */
+
+.block-6 {
+    background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    max-height: 795px;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+.block-6 .row-main{
+    padding:60px 0;
+}
+
+.button-acquista{
+    background-color:orangered!important;
+}
+
+h1{ /*prima c'era il .main-title */
+    font-size: 2.7rem;
+}
+
+.block-6.container-fluid::after {/*il titolo si legge molto meglio*/
+    content: "";
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: gray;
+    opacity: 0.15;
+}
+
+/*CONTAINER SETTE */
+.block-7 img.img-fluid{
+    border-radius: 15px;
+    transition: transform 1s;
+}
+
+.block-7 div.preview:hover img{
+    transform: translate(0px,-15px);
+}
+
+/*CONTAINER SETTE */
+/*FA COMPAGNIA AL QUATTRO*/
