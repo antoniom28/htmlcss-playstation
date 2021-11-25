@@ -1,0 +1,38 @@
+/*la prima imm è un background non img*/
+
+/*hover non è sul padre ma sarebbe meglio sul padre 
+alle imm che si alzano*/
+
+/*i due bottoni acquista e magg. informazioni sono uguali (il fatto del bordo)*/
+
+/*hover sul div padre nella sezione PS5*/
+
+/*footer 3 da 6, che diventano 3 da 12 in lg*/
+
+
+ul.dropdown-menu.show {
+    transform: translate(0px, 52px);
+}
+.dropdown-menu{
+    width:100%;
+}
+
+.row-1 img.logo{
+    width: 80px;
+}
+.lens{
+    width: 30px;
+}
+
+.row-1{
+    background-color: black;
+}
+
+i.fas.fa-angle-down {
+    color: darkgrey;
+    font-size: 14px;
+}
+
+.button-login:hover a{
+    border: 1px solid white;
+}
