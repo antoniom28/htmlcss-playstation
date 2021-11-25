@@ -79,8 +79,25 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
 .container-fluid.dropdown-menu.border-0.show{
     transform: translate(0px,110px)!important;
 }
-
+.navbar-collapse .navbar-nav .dropdown-menu.border-0.show{
+    transform: translate(0px,0px)!important;
+}
 
 .col-auto.text-center:hover img{
     box-shadow: 1px 1px 6px 1px #888;
+}
+
+.navbar-collapse .navbar-nav .container-fluid.dropdown-menu.border-0.show img {
+    width: 70px;
+}
+
+.navbar-collapse .navbar-nav .button-login{
+    width: 200px;
+    text-align: center;
+}
+.navbar-collapse .navbar-nav .button-login:hover a:after{
+    top: 4%;
+    left: 1%;
+    width: 98%;
+    height: 92%;
 }
