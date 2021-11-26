@@ -243,6 +243,9 @@ h1{ /*prima c'era il .main-title */
 .img-globe{
     width: 1rem;
 }
+.img-sie-logo{
+    width: 7rem;
+}
 
 div.footer-reg::after{
 content:"\00AE";
