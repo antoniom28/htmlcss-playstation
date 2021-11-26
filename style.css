@@ -290,3 +290,25 @@ top:30px;
 .preview:hover{
     cursor: pointer;
 }
+
+/* BONUS */
+.imm-main-preview{
+    position: relative;
+}
+
+.imm-main-preview.slide::after {
+    border-bottom: 8px solid #0d6efd;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    animation: timecount 4.2s linear;
+}
+
+@keyframes timecount{
+    100%{
+        width: 100%;
+    }
+}
