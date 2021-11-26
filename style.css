@@ -335,7 +335,7 @@ div.button-video {
     height: 50px;
     opacity: 0;
     cursor: pointer;
-    animation: opacita 1s ease 6s forwards;
+    animation: opacita 1s ease 5.8s forwards;
 }
 
 @media screen and (min-width:359px) {
@@ -430,7 +430,7 @@ div.video::before{
 
 div.video2::after{
     border-top: 8px solid #257cff;
-    border-radius: 10px;
+    border-radius: 5px;
     content: "";
     position: absolute;
     width: 0%;
@@ -442,7 +442,7 @@ div.video2::after{
 
 div.video::after{
     border-top: 8px solid #257cff;
-    border-radius: 10px;
+    border-radius: 5px;
     border-left: unset;
     content: "";
     position: absolute;
@@ -571,9 +571,9 @@ div.video2::before{
     }
 }
 
-@keyframes sparisci{
+/*@keyframes sparisci{
     100%{
         opacity: 0;
     }
-}
+}*/
 
