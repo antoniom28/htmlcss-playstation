@@ -571,9 +571,9 @@ div.video2::before{
     }
 }
 
-/*@keyframes sparisci{
+@keyframes sparisci{
     100%{
         opacity: 0;
     }
-}*/
+}
 
