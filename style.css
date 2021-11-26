@@ -234,3 +234,30 @@ h1{ /*prima c'era il .main-title */
 .block-11{
     background-color:#18184a;
 }
+
+
+.footer-logo img.footer-logo{
+    width: 6rem;
+    filter: invert(1) brightness(700%);
+}
+.img-globe{
+    width: 1rem;
+}
+
+div.footer-reg::after{
+content:"\00AE";
+font-size:13px;
+color: white;
+position: absolute;
+right: 38px;
+bottom:11px;
+}
+
+.footer-link a{
+    text-decoration: none;
+    color:white;
+    line-height: 2rem;
+}
+.footer-link a:hover{
+    text-decoration: underline;
+}
