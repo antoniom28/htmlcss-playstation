@@ -333,10 +333,59 @@ div.button-video {
     background-color: rgb(99, 137, 241);
     width: 200px;
     height: 50px;
-    opacity: 0;
+    opacity: 1;
     cursor: pointer;
     animation: opacita 1s ease 6s forwards;
 }
+
+@media screen and (min-width:500px) {
+    div.button-video {
+        top: 10%;
+        line-height: 2;
+        left: 7%;
+        width: 150px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width:568px) {
+    div.button-video {
+        left: 9%;
+    }
+}
+@media screen and (min-width:670px) {
+    div.button-video {
+        left: 13%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    div.button-video {
+        left: 10%;
+        width: 200px;
+        height: 50px;
+        line-height: 3;
+    }
+}
+
+@media screen and (min-width:992px) {
+    div.button-video {
+        left: 12%;
+        width: 250px;
+        height: 65px;
+        line-height: 4;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    div.button-video {
+        left: 14%;
+        top:13%;
+    }
+}
+
+
+
 div.button-video:hover{
     /*box-shadow: 3px 3px 5px blue;*/
     box-shadow: 2px 2px 10px 3px blue;
@@ -510,8 +559,9 @@ div.video2::before{
     }
 }
 
-@keyframes sparisci{
+/*@keyframes sparisci{
     100%{
         opacity: 0;
     }
-}
+}*/
+
