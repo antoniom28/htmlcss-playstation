@@ -248,9 +248,9 @@ div.footer-reg::after{
 content:"\00AE";
 font-size:13px;
 color: white;
-position: absolute;
-right: 355px;
-bottom:11px;
+position: relative;
+right: 30px;
+top:30px;
 }
 
 .footer-link a{
