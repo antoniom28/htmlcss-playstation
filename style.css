@@ -214,5 +214,23 @@ h1{ /*prima c'era il .main-title */
     transform: translate(0px,-15px);
 }
 
-/*CONTAINER SETTE */
+/*CONTAINER OTTO */
 /*FA COMPAGNIA AL QUATTRO*/
+
+/*CONTAINER NOVE */
+.block-9{
+    background-color: #bbb;
+}
+
+.button-plus{
+    background-color:#ffffff91;
+}
+
+/*CONTAINER NOVE */
+/*CONTAINER DIECI */
+/*si uniscono, ORMAI SONO UNA COMITIVA*/
+
+/*CONTAINER  UNDICI */
+.block-11{
+    background-color:#18184a;
+}
