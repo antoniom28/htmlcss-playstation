@@ -333,9 +333,20 @@ div.button-video {
     background-color: rgb(99, 137, 241);
     width: 200px;
     height: 50px;
-    opacity: 1;
+    opacity: 0;
     cursor: pointer;
     animation: opacita 1s ease 6s forwards;
+}
+
+@media screen and (min-width:359px) {
+    div.button-video {
+        top: 8%;
+        left: 6%;
+        width: 120px;
+        height: 25px;
+        font-size: 12px;
+        line-height: 2;
+    }
 }
 
 @media screen and (min-width:500px) {
@@ -343,6 +354,7 @@ div.button-video {
         top: 10%;
         line-height: 2;
         left: 7%;
+        font-size: 1rem;
         width: 150px;
         height: 35px;
     }
@@ -559,9 +571,9 @@ div.video2::before{
     }
 }
 
-/*@keyframes sparisci{
+@keyframes sparisci{
     100%{
         opacity: 0;
     }
-}*/
+}
 
