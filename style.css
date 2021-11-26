@@ -225,10 +225,32 @@ h1{ /*prima c'era il .main-title */
 .button-plus{
     background-color:#ffffff91;
 }
+.button-plus:hover::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 102%;
+    height: 115%;
+    border: 2px solid gray;
+    opacity: 0;
+    animation: bordo 0.2s linear forwards;
+    border-radius: 50em;
+    filter: opacity(0.3);
+    cursor: pointer;
+}
+
+.button-now:hover a::after{
+    border: 1px solid black!important;
+}
 
 /*CONTAINER NOVE */
-/*CONTAINER DIECI */
 /*si uniscono, ORMAI SONO UNA COMITIVA*/
+
+/*CONTAINER DIECI */
+.block-10 .img-fluid{
+    cursor: pointer;
+}
 
 /*CONTAINER  UNDICI */
 .block-11{
@@ -263,4 +285,8 @@ top:30px;
 }
 .footer-link a:hover{
     text-decoration: underline;
+}
+
+.preview:hover{
+    cursor: pointer;
 }
