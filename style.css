@@ -318,6 +318,12 @@ video{
     width: 100%;
 }
 
+div.video2{
+    
+    
+    transform: scale(0.95);
+}
+
 div.video,div.video2{
     position: relative;
 }
@@ -335,7 +341,7 @@ div.button-video {
     height: 50px;
     opacity: 0;
     cursor: pointer;
-    animation: opacita 1s ease 5.8s forwards;
+    animation: opacita 1s ease 3.8s forwards;
 }
 
 @media screen and (min-width:359px) {
@@ -414,7 +420,7 @@ div.button-video:hover{
 }
 
 div.video::before{
-    border: 8px solid #257cff;
+    border: 6px solid #257cff;
     border-radius: 10px;
     border-end-start-radius: 0;
     z-index: 2;
@@ -426,11 +432,11 @@ div.video::before{
     height: 0%;
     left: calc(50% + 6px);
     bottom: 0;
-    animation: bordodx 3s linear  forwards,sparisci 1s 7.5s forwards;
+    animation: bordodx 2s linear  forwards,sparisci 1s 5.5s forwards;
 }
 
 div.video2::after{
-    border-top: 8px solid #257cff;
+    border-top: 6px solid #257cff;
     border-radius: 5px;
     content: "";
     position: absolute;
@@ -438,11 +444,11 @@ div.video2::after{
     height: 0%;
     right:0;
     top: -6px;
-    animation: bordotopdx 3s linear 3s forwards,sparisci 1s 7.5s forwards;
+    animation: bordotopdx 2s linear 2s forwards,sparisci 1s 5.5s forwards;
 }
 
 div.video::after{
-    border-top: 8px solid #257cff;
+    border-top: 6px solid #257cff;
     border-radius: 5px;
     border-left: unset;
     content: "";
@@ -451,11 +457,11 @@ div.video::after{
     height: 0%;
     left:0;
     top:-6px;
-    animation: bordotopsx 3s linear 3s forwards,sparisci 1s 7.5s forwards;
+    animation: bordotopsx 2s linear 2s forwards,sparisci 1s 5.5s forwards;
 }
 
 div.video2::before{ 
-    border: 8px solid #257cff;
+    border: 6px solid #257cff;
     border-radius: 10px;
     border-end-end-radius: 0;
     z-index: 1;
@@ -467,7 +473,7 @@ div.video2::before{
     height: 0%;
     left: 50%;
     bottom: 0;
-    animation: bordosx 3s linear  forwards,sparisci 1s 7.5s forwards;
+    animation: bordosx 2s linear forwards,sparisci 1s 5.5s forwards;
     
 }
 
@@ -526,7 +532,7 @@ div.video2::before{
 @keyframes bordotopdx {
     0%{
         
-    border-left: 8px solid #257cff;
+    border-left: 6px solid #257cff;
         width: 0%;
     }
     25%{
@@ -534,7 +540,7 @@ div.video2::before{
         height: 0%;
     }
     50%{
-        border-left: 8px solid #257cff;
+        border-left: 6px solid #257cff;
         width: 50%;
         height: 0%;
     }
@@ -543,7 +549,7 @@ div.video2::before{
         height: 0%;
     }
     100%{
-        border-left: 8px solid #257cff;
+        border-left: 6px solid #257cff;
         width: 75%;
         height: 15%;
     }
@@ -553,14 +559,14 @@ div.video2::before{
 @keyframes bordotopsx {
     0%{
         width: 0%;
-        border-right: 8px solid #257cff;
+        border-right: 6px solid #257cff;
     }
     25%{
         width: 13%;
         height: 0%;
     }
     50%{
-        border-right: 8px solid #257cff;
+        border-right: 6px solid #257cff;
         width: 19%;
         height: 0%;
     }
@@ -569,7 +575,7 @@ div.video2::before{
         height: 0%;
     }
     100%{
-        border-right: 8px solid #257cff;
+        border-right: 6px solid #257cff;
         width: 22%;
         height: 15%;
     }
