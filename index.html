@@ -14,428 +14,287 @@
 
 <body onload="slide();" >
 
-    <div class="bg-light position-fixed container-fluid menu-fixed">
-
-        <div class="row row-1">
-            <div class="col d-block text-end ">
+    <div class="p-0 container-fluid menu-fixed position-fixed">
+        <div class="row row-1 bg-black">
+            <div class="mx-4 col d-block text-end">
                 <a class="text-decoration-none text-white " href="#">
                     <img class="logo py-3" src="img/sony_logo.svg" alt="">
                 </a>
             </div>
         </div>
 
+        <div class="row">
+            <div class="px-1 col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/play_logo.svg" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="justify-content-between collapse navbar-collapse" id="navbarNavDropdown">
 
-        <div class="py-lg-2 row row-cols-3 row-2 justify-content-between align-items-center">
-
-            <!-- BLOCCO MENU DA XS A LG-->
-            <div class="col-12 d-lg-none px-0">
-                <nav class="navbar navbar-expand-lg navbar-light mx-3">
-                    <a class="text-black  navbar-brand" href="#">
-                        <img src="img/play_logo.svg" alt="">
-                    </a>
-
-                    <button class="border-black navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon menu"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <div class="navbar-nav">
-
-                            <a class="my-2 text-decoration-none text-black  tasti-menu" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Giochi <i class="fas fa-angle-down"></i>
-                                <i class="d-none fas fa-angle-up"></i>
+                            <a   onclick="showsearchtext()" id="menusearch" class="d-none mx-2 text-decoration-none text-black" href="#">
+                                <h2>Menu PlayStation</h2>
                             </a>
-                            <div class="container-fluid dropdown-menu border-0 border-top border-bottom"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                <div class="row justify-content-start align-items-center">
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <ul  id="menu-sx" class="menu sinistra navbar-nav">
+                                <li class="ms-1 mx-xl-2 mx-xxl-3 position-static nav-item dropdown">
+                                    <a class="text-dark nav-link tasti-menu" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Giochi 
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="d-none fas fa-angle-up"></i>
+                                    </a>
+                                    <ul class="m-0 border-0 flex-column align-items-center container-fluid dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <ul class="list-style-none d-flex justify-content-lg-center justify-content-start">
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="border mb-3 w-100 d-none d-lg-block">
+                                            <ul class="d-flex justify-content-center py-2">
+                                                <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
+                                                <li class="mx-5"><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                                <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="mx-1 mx-xl-2 mx-xxl-3 position-static nav-item dropdown">
+                                    <a class="text-dark nav-link tasti-menu" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Hardware 
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="d-none fas fa-angle-up"></i>
+                                    </a>
+                                    <ul class="m-0 border-0 flex-column align-items-center container-fluid dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <ul class="list-style-none d-flex justify-content-lg-center justify-content-start">
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="border mb-3 w-100 d-none d-lg-block">
+                                            <ul class="d-flex justify-content-center py-2">
+                                                <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
+                                                <li class="mx-5"><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                                <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="mx-1 mx-xl-2 mx-xxl-3 position-static nav-item dropdown">
+                                    <a class="text-dark nav-link tasti-menu" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Servizi 
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="d-none fas fa-angle-up"></i>
+                                    </a>
+                                    <ul class="m-0 border-0 flex-column align-items-center container-fluid dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <ul class="list-style-none d-flex justify-content-lg-center justify-content-start">
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="border mb-3 w-100 d-none d-lg-block">
+                                            <ul class="d-flex justify-content-center py-2">
+                                                <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
+                                                <li class="mx-5"><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                                <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                            <a class="my-2 text-decoration-none text-black  tasti-menu" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Hardware <i class="fas fa-angle-down"></i>
-                                <i class="d-none fas fa-angle-up"></i>
-                            </a>
-                            <div class="container-fluid dropdown-menu border-0 border-top border-bottom"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                <div class="row justify-content-start align-items-center">
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                </div>
-                            </div>
+                                <li class="mx-1 mx-xl-2 mx-xxl-3 position-static nav-item dropdown">
+                                    <a class="text-dark nav-link tasti-menu" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Novità 
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="d-none fas fa-angle-up"></i>
+                                    </a>
+                                    <ul class="m-0 border-0 flex-column align-items-center container-fluid dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <ul class="list-style-none d-flex justify-content-lg-center justify-content-start">
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="border mb-3 w-100 d-none d-lg-block">
+                                            <ul class="d-flex justify-content-center py-2">
+                                                <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
+                                                <li class="mx-5"><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                                <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                            <a class="my-2 text-decoration-none text-black  tasti-menu" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Servizi <i class="fas fa-angle-down"></i>
-                                <i class="d-none fas fa-angle-up"></i>
-                            </a>
-                            <div class="container-fluid dropdown-menu border-0 border-top border-bottom"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                <div class="row justify-content-start align-items-center">
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                </div>
-                            </div>
+                                <li class="mx-1 mx-xl-2 mx-xxl-3 position-static nav-item dropdown">
+                                    <a class="text-dark nav-link tasti-menu" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Fai acquisti 
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="d-none fas fa-angle-up"></i>
+                                    </a>
+                                    <ul class="m-0 border-0 flex-column align-items-center container-fluid dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <ul class="list-style-none d-flex justify-content-lg-center justify-content-start">
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="border mb-3 w-100 d-none d-lg-block">
+                                            <ul class="d-flex justify-content-center py-2">
+                                                <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
+                                                <li class="mx-5"><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                                <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                            <a class="my-2 text-decoration-none text-black  tasti-menu" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Novità <i class="fas fa-angle-down"></i>
-                                <i class="d-none fas fa-angle-up"></i>
-                            </a>
-                            <div class="container-fluid dropdown-menu border-0 border-top border-bottom"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                <div class="row justify-content-start align-items-center">
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                </div>
-                            </div>
+                                <li class="mx-1 mx-xl-2 mx-xxl-3 position-static nav-item dropdown">
+                                    <a class="text-dark nav-link tasti-menu" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Supporto 
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="d-none fas fa-angle-up"></i>
+                                    </a>
+                                    <ul class="m-0 border-0 flex-column align-items-center container-fluid dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <ul class="list-style-none d-flex justify-content-lg-center justify-content-start">
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="border mb-3 w-100 d-none d-lg-block">
+                                            <ul class="d-flex justify-content-center py-2">
+                                                <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
+                                                <li class="mx-5"><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                                <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
 
-                            <a class="my-2 text-decoration-none text-black  tasti-menu" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Fai acquisti <i class="fas fa-angle-down"></i>
-                                <i class="d-none fas fa-angle-up"></i>
-                            </a>
-                            <div class="container-fluid dropdown-menu border-0 border-top border-bottom"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                <div class="row justify-content-start align-items-center">
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <ul id="menu-dx" class="justify-content-between align-items-lg-center navbar-nav">
+                                <li class="mx-1 mx-xl-2 mx-xxl-3 position-static nav-item dropdown">
+                                    <a class="text-dark nav-link tasti-menu" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        My PlayStation 
+                                        <i class="fas fa-angle-down"></i>
+                                        <i class="d-none fas fa-angle-up"></i>
+                                    </a>
+                                    <ul class="m-0 border-0 flex-column align-items-center container-fluid dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <ul class="list-style-none d-flex justify-content-lg-center justify-content-start">
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                                <li class="text-center">
+                                                    <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
+                                                    <p class="">PS5</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                            <a class="my-2 text-decoration-none text-black  tasti-menu" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Supporto <i class="fas fa-angle-down"></i>
-                                <i class="d-none fas fa-angle-up"></i>
-                            </a>
-                            <div class="container-fluid dropdown-menu border-0 border-top border-bottom"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                <div class="row justify-content-start align-items-center">
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                </div>
-                            </div>
+                                <li class="my-2 mx-1 mx-xl-2 mx-xxl-3 position-relative button-login rounded-pill px-4 text-center bg-dark">
+                                    <a class="lh-lg text-decoration-none text-white" href="#">Accedi</a>
+                                </li>
 
-                            <a class="my-2 text-decoration-none text-black  tasti-menu" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                My PlayStation <i class="fas fa-angle-down"></i>
-                                <i class="d-none fas fa-angle-up"></i>
-                            </a>
-                            <div class="container-fluid dropdown-menu border-0 border-top border-bottom"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                <div class="row justify-content-start align-items-center">
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <a href="#"><img class="mt-1" src="img/play-menu-ico.png" alt=""></a>
-                                        <p class="">PS5</p>
-                                    </div>
-                                </div>
-                            </div>
+                                <li onclick="showsearchtext()" class="d-none d-lg-block mx-1 py-1 mx-xl-2 mx-xxl-3 search">
+                                    <img class="lens search" src="img/lens.svg" alt="">
+                                </li>
 
-                            <div
-                                class="my-2 position-relative button-login rounded-pill px-3 py-1 d-inline-block bottone bg-dark">
-                                <a class="text-decoration-none text-white" href="#">Accedi</a>
-                            </div>
+                                <li id="search" class="mx-1 py-1 mx-xl-2 mx-xxl-3 d-lg-none">
+                                    <form class="d-flex">
+                                        <button id="searchbutton" class="btn btn-outline-success" type="submit">
+                                            Search
+                                        </button>
+                                        <input id="searchtext" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </li>
+                            </ul>
 
-                            <div class="my-2 py-2 border border-dark d-inline-block search">
-                                <img class="lens search" src="img/lens.svg" alt="">
-                            </div>
                         </div>
+                    </div>
                 </nav>
-            </div>
-
-            <!-- BLOCCO MENU DA LG IN POI -->
-            <div class="col-7 d-none d-lg-flex justify-content-between align-items-center">
-                <!-- BLOCCO MENU A SINISTRA -->
-                <a class="text-black  navbar-brand" href="#">
-                    <img src="img/play_logo.svg" alt="">
-                </a>
-
-
-                <a class="text-decoration-none text-black  tasti-menu" href="#" id="navbarDropdownMenuLink"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    Giochi <i class="fas fa-angle-down"></i>
-                    <i class="d-none fas fa-angle-up"></i>
-                </a>
-                <div class="container-fluid dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                    </div>
-
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                    </ul>
-                </div>
-
-
-                <a class="text-decoration-none text-black  tasti-menu" href="#" id="navbarDropdownMenuLink"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    Hardware <i class="fas fa-angle-down"></i>
-                    <i class="d-none fas fa-angle-up"></i>
-                </a>
-                <div class="container-fluid dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                    </div>
-
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                    </ul>
-                </div>
-
-
-                <a class="text-decoration-none text-black  tasti-menu" href="#" id="navbarDropdownMenuLink"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    Servizi <i class="fas fa-angle-down"></i>
-                    <i class="d-none fas fa-angle-up"></i>
-                </a>
-                <div class="container-fluid dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                    </div>
-
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                    </ul>
-                </div>
-
-
-                <a class="text-decoration-none text-black  tasti-menu" href="#" id="navbarDropdownMenuLink"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    Novità <i class="fas fa-angle-down"></i>
-                    <i class="d-none fas fa-angle-up"></i>
-                </a>
-                <div class="container-fluid dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                    </div>
-
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                    </ul>
-                </div>
-
-
-                <a class="text-decoration-none text-black  tasti-menu" href="#" id="navbarDropdownMenuLink"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    Fai acquisti <i class="fas fa-angle-down"></i>
-                    <i class="d-none fas fa-angle-up"></i>
-                </a>
-                <div class="container-fluid dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                    </div>
-
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                    </ul>
-                </div>
-
-
-                <a class="text-decoration-none text-black  tasti-menu" href="#" id="navbarDropdownMenuLink"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    Supporto <i class="fas fa-angle-down"></i>
-                    <i class="d-none fas fa-angle-up"></i>
-                </a>
-                <div class="container-fluid dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                    </div>
-
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li><a class="text-black text-decoration-none" href="#">sub link acquisti</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                        <li><a class="text-black text-decoration-none" href="#">sub link</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- blocco a destra del menu -->
-            <div class="col-3 d-none d-lg-flex justify-content-between align-items-center">
-                <a class="flex-shrink-0 text-decoration-none text-black  tasti-menu" href="#"
-                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                    My PlayStation <i class="fas fa-angle-down"></i>
-                    <i class="d-none fas fa-angle-up"></i>
-                </a>
-                <div class="container-fluid dropdown-menu border-0" aria-labelledby="navbarDropdownMenuLink">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                        <div class="col-auto text-center">
-                            <a href="#"><img src="img/play-menu-ico.png" alt=""></a>
-                            <p class="">PS5</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="position-relative button-login rounded-pill px-3 py-1 d-inline-block bottone bg-dark">
-                    <a class="text-decoration-none text-white" href="#">Accedi</a>
-                </div>
-
-                <div class="d-inline-block search">
-                    <img class="lens search" src="img/lens.svg" alt="">
-                </div>
             </div>
         </div>
     </div>
@@ -763,11 +622,12 @@
             </div>
 
             <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mt-4">
+                
+                <div class="col mt-4 d-flex flex-column justify-content-between">
                     <div class="main-imm">
                         <img class="img-fluid" src="img/ps4-slim-homepage-image-block.jpg" alt="">
                     </div>
-                    <div class="testo">
+                    <div class="testo text-center">
                         <h1 class="">
                             PlayStation 4
                         </h1>
@@ -786,11 +646,11 @@
                     </div>
                 </div>
 
-                <div class="col mt-4 position-relative">
+                <div class="col mt-4 position-relative d-flex flex-column justify-content-between">
                     <div class="main-imm">
                         <img class="img-fluid" src="img/double11-202010-tw-psvr.jpg" alt="">
                     </div>
-                    <div class="testo">
+                    <div class="testo text-center">
                         <h1 class="">
                             PlayStation VR
                         </h1>
@@ -798,23 +658,23 @@
                             Oltre 500 titoli ed esperienze di gioco.
                             Scoprili tutti.
                         </p>
-
-                    </div>
-                    <div class="col">
-                        <div
-                            class="position-relative button-login button-more-info rounded-pill px-3 py-1 d-inline-block bottone bg-primary">
-                            <a class="text-decoration-none text-white" href="#">
-                                Scopri di più
-                            </a>
+                        <div class="row">
+                            <div class="col">
+                                <div class="position-relative button-login button-more-info rounded-pill px-3 py-1 d-inline-block bottone bg-primary">
+                                    <a class="text-decoration-none text-white" href="#">
+                                        Scopri di più
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col mt-4 position-relative">
+                <div class="col mt-4 position-relative d-flex flex-column justify-content-between">
                     <div class="main-imm">
                         <img class="img-fluid" src="img/dualshock-4-listing-thumb.jpg" alt="">
                     </div>
-                    <div class="testo">
+                    <div class="testo text-center">
                         <h1 class="">
                             Accessori
                         </h1>
@@ -1136,6 +996,56 @@
                         x1.className +=" d-view";
                     }
             }
+        
+        function showsearchtext(){
+            var w = window.innerWidth;
+            if(w < 1200 && w > 991)
+            {
+                var x=document.getElementById("search");
+                if(!x.classList.contains("d-lg-none"))
+                x.className+=" d-lg-none";
+                else
+                    x.classList.remove("d-lg-none");
+
+                var x=document.getElementById("menu-sx");
+                if(!x.classList.contains("d-none"))
+                    x.className+=" d-none";
+                else
+                    x.classList.remove("d-none");
+
+                var x=document.getElementById("menusearch");
+                if(!x.classList.contains("d-none"))
+                    x.className+=" d-none";
+                else
+                    x.classList.remove("d-none");
+            }
+            else if(w>991){
+                var x=document.getElementById("search");
+                if(!x.classList.contains("d-lg-none"))
+                x.className+=" d-lg-none";
+                else
+                    x.classList.remove("d-lg-none");
+            }
+        }
+
+        function displayWindowSize(){
+            var w=document.documentElement.clientWidth;
+            if(w>1199 || w<992){
+                var x=document.getElementById("search");
+                if(!x.classList.contains("d-lg-none"))
+                x.className+=" d-lg-none";
+
+                var x=document.getElementById("menu-sx");
+                if(x.classList.contains("d-none"))
+                    x.classList.remove("d-none");
+
+                var x=document.getElementById("menusearch");
+                if(!x.classList.contains("d-none"))
+                    x.className+=" d-none";
+            }
+    }
+    window.addEventListener("resize", displayWindowSize);
+    displayWindowSize();
     </script>
 
 </body>

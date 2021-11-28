@@ -1,35 +1,22 @@
-/*la prima imm è un background non img*/
-
-/*hover non è sul padre ma sarebbe meglio sul padre 
-alle imm che si alzano*/
-
-/*i due bottoni acquista e magg. informazioni sono uguali (il fatto del bordo)*/
-
-/*hover sul div padre nella sezione PS5*/
-
-/*footer 3 da 6, che diventano 3 da 12 in lg*/
-
-ul.dropdown-menu.show {
-    transform: translate(0px, 52px);
-}
-.dropdown-menu{
-    width:100%;
-}
-
 .row-1 img.logo{
     width: 80px;
 }
 .lens{
     width: 30px;
 }
-
-.row-1{
+.lens:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.bg-black{
     background-color: black;
 }
-
-
+.list-style-none{
+    list-style: none;
+}
 .tasti-menu:hover,.tasti-menu:hover i,
-.tasti-menu:focus,.tasti-menu:focus i{
+.tasti-menu:focus,.tasti-menu:focus i,
+#menusearch:hover{
     color:rgb(79, 189, 233)!important;
 }
 
@@ -43,8 +30,6 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
 .tasti-menu:focus .fas.fa-angle-down{
     display: none!important;
 }
-
-
 .button-login:hover a:after {
     content: "";
     position: absolute;
@@ -64,47 +49,42 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
     }
 }
 
-.container-fluid.dropdown-menu ul li{
-    margin: 0 20px;
-}
-.container-fluid.dropdown-menu ul li:hover a{
-    color:rgb(79, 189, 233)!important;
-}
-.container-fluid.dropdown-menu ul{
-    border: 1px solid #cbcbcb;
-    padding: 10px 0;
-}
-
-.container-fluid.dropdown-menu.border-0.show{
-    transform: translate(0px,105px)!important;
-}
-.navbar-collapse .navbar-nav .dropdown-menu.border-0.show{
-    transform: translate(0px,0px)!important;
-}
-
-.col-auto.text-center:hover img{
-    box-shadow: 1px 1px 6px 1px #888;
-}
-
-.navbar-collapse .navbar-nav .container-fluid.dropdown-menu.border-0.show img {
-    width: 70px;
-}
-
-.navbar-collapse .navbar-nav .button-login{
-    width: 200px;
-    text-align: center;
-}
-.navbar-collapse .navbar-nav .button-login:hover a:after{
-    top: 4%;
-    left: 1%;
-    width: 98%;
-    height: 92%;
-}
-
 .container-fluid.menu-fixed{
     z-index: 1000;
 }
 
+@media screen and (max-width:991px) {
+    #menu-dx .button-login{
+        width: 250px!important;
+    }
+    li.search{
+        border:1px solid black;
+    }
+}
+
+#searchtext{
+    width: 240px!important;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+#searchbutton{
+    width: 100px!important;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+@media screen and (min-width:1200px) {
+    #searchtext{
+        width: calc(70vw - 750px) !important;
+    }
+    #searchbutton{
+        width: 50px!important;
+    }
+}
+@media screen and (min-width:1400px) {
+    #searchtext{
+        width: calc(70vw - 850px) !important;
+    }
+}
 /*CONTAINER DUE */
 
 .block-2 {
@@ -330,85 +310,27 @@ div.video,div.video2{
 
 div.button-video {
     position: absolute;
-    top: 13%;
+    top: calc(15% - 10px);
     z-index: 30;
-    line-height: 3;
     text-align: center;
-    border-radius: 30px;
-    left: 16%;
+    left: 11%;
     background-color: rgb(99, 137, 241);
-    width: 200px;
-    height: 50px;
+    width: 25%;
+    height: 11%;
     opacity: 0;
     cursor: pointer;
-    animation: opacita 1s ease 3.8s forwards;
+    animation: opacita 1s ease 6.8s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-end-end-radius: 149px;
+    border-start-start-radius: 149px;
 }
-
-@media screen and (min-width:359px) {
-    div.button-video {
-        top: 8%;
-        left: 6%;
-        width: 120px;
-        height: 25px;
-        font-size: 12px;
-        line-height: 2;
-    }
-}
-
-@media screen and (min-width:500px) {
-    div.button-video {
-        top: 10%;
-        line-height: 2;
-        left: 7%;
-        font-size: 1rem;
-        width: 150px;
-        height: 35px;
-    }
-}
-
-@media screen and (min-width:568px) {
-    div.button-video {
-        left: 9%;
-    }
-}
-@media screen and (min-width:670px) {
-    div.button-video {
-        left: 13%;
-    }
-}
-
-@media screen and (min-width:768px) {
-    div.button-video {
-        left: 10%;
-        width: 200px;
-        height: 50px;
-        line-height: 3;
-    }
-}
-
-@media screen and (min-width:992px) {
-    div.button-video {
-        left: 12%;
-        width: 250px;
-        height: 65px;
-        line-height: 4;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    div.button-video {
-        left: 14%;
-        top:13%;
-    }
-}
-
-
 
 div.button-video:hover{
     /*box-shadow: 3px 3px 5px blue;*/
     box-shadow: 2px 2px 10px 3px blue;
 }
-
 
 @keyframes opacita{
     from{
@@ -420,7 +342,7 @@ div.button-video:hover{
 }
 
 div.video::before{
-    border: 6px solid #257cff;
+    border: 6px solid #257cff; /**/
     border-radius: 10px;
     border-end-start-radius: 0;
     z-index: 2;
@@ -428,11 +350,12 @@ div.video::before{
     border-left: unset;
     content: "";
     position: absolute;
-    width: 0%;
-    height: 0%;
-    left: calc(50% + 6px);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left:50%;
     bottom: 0;
-    animation: bordodx 2s linear  forwards,sparisci 1s 5.5s forwards;
+    animation: bordodx 2s linear 3s forwards,sparisci 1s 8.5s forwards;
 }
 
 div.video2::after{
@@ -440,11 +363,11 @@ div.video2::after{
     border-radius: 5px;
     content: "";
     position: absolute;
-    width: 0%;
+    width: 0;
     height: 0%;
     right:0;
     top: -6px;
-    animation: bordotopdx 2s linear 2s forwards,sparisci 1s 5.5s forwards;
+    animation: bordotopdx 2s linear 5s forwards,sparisci 1s 8.5s forwards;
 }
 
 div.video::after{
@@ -457,7 +380,7 @@ div.video::after{
     height: 0%;
     left:0;
     top:-6px;
-    animation: bordotopsx 2s linear 2s forwards,sparisci 1s 5.5s forwards;
+    animation: bordotopsx 2s linear 5s forwards,sparisci 1s 8.5s forwards;
 }
 
 div.video2::before{ 
@@ -469,16 +392,18 @@ div.video2::before{
     border-right: unset;
     content: "";
     position: absolute;
-    width: 2%;
-    height: 0%;
+    width: 0;
+    height: 0;
     left: 50%;
+    opacity: 0;
     bottom: 0;
-    animation: bordosx 2s linear forwards,sparisci 1s 5.5s forwards;
+    animation: bordosx 2s linear 3s forwards,sparisci 1s 8.5s forwards;
     
 }
 
 @keyframes bordodx {
     0%{
+        opacity: 1;
         width:10%;
     }
     25%{
@@ -498,6 +423,7 @@ div.video2::before{
     }
     100%{
         width:50%;
+        opacity: 1;
         height:calc(100% + 6px)
     }
 }
@@ -505,6 +431,7 @@ div.video2::before{
 @keyframes bordosx {
     0%{
         left:50%;
+        opacity: 1;
     }
     25%{
         left:30%;
@@ -525,7 +452,8 @@ div.video2::before{
     100%{
         width: 55%;
         left:calc(0% - 6px);
-        height:calc(100% + 6px)
+        height:calc(100% + 6px);
+        opacity: 1;
     }
 }
 
