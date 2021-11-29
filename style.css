@@ -30,7 +30,8 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
 .tasti-menu:focus .fas.fa-angle-down{
     display: none!important;
 }
-.button-login:hover a:after {
+
+/*.button-login:hover a:after {
     content: "";
     position: absolute;
     top: 6%;
@@ -41,25 +42,66 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
     opacity: 0;
     animation: bordo 0.2s linear forwards;
     border-radius: 50em;
+}*/
+.button-mio{
+    border-radius: 50rem;
+    cursor: pointer;
+}
+.button-mio-hover{
+    margin: 3px;
+    padding: 5px 20px;
+    border-radius: inherit;
+    outline: 1px solid transparent;
+    transition: outline .3s linear;
 }
 
-@keyframes bordo{
-    100%{   
-        opacity: 1;    
-    }
+/*TUTTI I BUTTON CON GLI HOVER*/
+.button-acquista{
+    background-color: orangered;
 }
+.button-accedi{
+    background-color: #212529;
+}
+.button-info{
+    background-color: #0d6efd;
+}
+.button-scopri{
+    background-color: #0d6efd;
+}
+.button-plus{
+    background-color:#ffffff91;
+}
+.button-now{
+    background-color:white;
+}
+
+.button-accedi .button-mio-hover{
+    padding: 3px 20px;
+}
+.button-acquista .button-mio-hover{
+    outline-width: 2px;
+    padding: 3px 20px;
+}
+.button-scopri .button-mio-hover{
+    padding: 3px 20px;
+}
+
+.button-mio:hover .button-mio-hover{
+    outline-color: white;
+}
+.button-acquista:hover .button-mio-hover{
+    outline-color: black;
+}
+.button-now:hover .button-mio-hover{
+    outline-color: black;
+}
+.button-plus:hover{
+    box-shadow: 1px 1px 5px 4px gray;
+}
+/*FINE - TUTTI I BUTTON CON GLI HOVER - FINE*/
 
 .container-fluid.menu-fixed{
     z-index: 1000;
-}
-
-@media screen and (max-width:991px) {
-    #menu-dx .button-login{
-        width: 250px!important;
-    }
-    li.search{
-        border:1px solid black;
-    }
 }
 
 #searchtext{
@@ -104,8 +146,8 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
     }
 }
 
-/*CONTAINER DUE */
 
+/*CONTAINER DUE */
 .block-2 {
     background-image: url(img/jumbo-bg.png);
     background-size: auto;
@@ -118,10 +160,6 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
 .block-2 .row-main{
     transform:translate(0px,400px);
     /*padding-top:400px*/
-}
-
-.button-acquista{
-    background-color:orangered!important;
 }
 
 h1{ /*prima c'era il .main-title */
@@ -138,29 +176,10 @@ h1{ /*prima c'era il .main-title */
     transform: translate(0px,-15px);
 }
 
-/*/.main-img-preview{
-    position: relative;
-}
-.main-img-preview::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    z-index: 2000;
-    background-color: red;
-    border: 2px solid blue;
-}*/
-
 /*CONTAINER  QUATTRO */
 /*E' TRISTE*/
 
 /*CONTAINER CINQUE */
-.button-more-info{
-    background-color:unset;
-}
-
 .accessory-preview div.preview img{
     filter: opacity(0.6);
     transition: filter 1s;
@@ -182,10 +201,6 @@ h1{ /*prima c'era il .main-title */
 
 .block-6 .row-main{
     padding:60px 0;
-}
-
-.button-acquista{
-    background-color:orangered!important;
 }
 
 h1{ /*prima c'era il .main-title */
@@ -220,28 +235,6 @@ h1{ /*prima c'era il .main-title */
 /*CONTAINER NOVE */
 .block-9{
     background-color: #bbb;
-}
-
-.button-plus{
-    background-color:#ffffff91;
-}
-.button-plus:hover::after{
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 102%;
-    height: 115%;
-    border: 2px solid gray;
-    opacity: 0;
-    animation: bordo 0.2s linear forwards;
-    border-radius: 50em;
-    filter: opacity(0.3);
-    cursor: pointer;
-}
-
-.button-now:hover a::after{
-    border: 1px solid black!important;
 }
 
 /*CONTAINER NOVE */
@@ -333,10 +326,10 @@ div.button-video {
     top: calc(15% - 10px);
     z-index: 30;
     text-align: center;
-    left: 11%;
+    left: 9%;
     background-color: rgb(99, 137, 241);
-    width: 25%;
-    height: 11%;
+    width: 30%;
+    height: 15%;
     opacity: 0;
     cursor: pointer;
     animation: opacita 1s ease 6.8s forwards;
@@ -345,6 +338,7 @@ div.button-video {
     align-items: center;
     border-end-end-radius: 149px;
     border-start-start-radius: 149px;
+    font-size:2vw;
 }
 
 div.button-video:hover{
