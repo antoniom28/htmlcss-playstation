@@ -85,6 +85,25 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
         width: calc(70vw - 850px) !important;
     }
 }
+
+#menu-sx ul li.text-center,
+#menu-dx  ul li.text-center{
+    margin: 0 5px;
+}
+
+#menu-sx ul li img:hover,
+#menu-dx  ul li img:hover{
+    /*box-shadow: 3px 3px 5px blue;*/
+    box-shadow: 2px 2px 5px 3px gray;
+}
+
+@media screen and (max-width:991px) {
+    #menu-sx  ul li img,
+    #menu-dx  ul li img{
+        width: 90px;
+    }
+}
+
 /*CONTAINER DUE */
 
 .block-2 {
@@ -98,6 +117,7 @@ i.fas.fa-angle-down,i.fas.fa-angle-up{
 
 .block-2 .row-main{
     transform:translate(0px,400px);
+    /*padding-top:400px*/
 }
 
 .button-acquista{
@@ -353,7 +373,7 @@ div.video::before{
     width: 0;
     height: 0;
     opacity: 0;
-    left:50%;
+    left:calc(50% + 6px);
     bottom: 0;
     animation: bordodx 2s linear 3s forwards,sparisci 1s 8.5s forwards;
 }
